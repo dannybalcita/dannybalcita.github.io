@@ -1,0 +1,9 @@
+include: [".well-known"]
+
+# Force .pem files to render directly in the browser as plain text
+webrick:
+  headers:
+    "Content-Type": "text/plain"
+
+mime_types:
+  .pem: text/plain
